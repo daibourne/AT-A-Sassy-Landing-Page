@@ -8,6 +8,7 @@ body {
   background-color: #FFC300;
   font-family: Trebuchet MS, Arial, sans-serif;
   line-height: 1;
+  color: white;
 }
 
 img {
@@ -16,6 +17,37 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.hero .box {
+  background-color: black;
+}
+.hero .box nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.hero .box nav h1 {
+  color: white;
+}
+.hero .box nav h1 ul {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.hero .box nav h1 ul li a {
+  color: white;
+}
+.hero .box .hero-content {
+  display: flex;
+  align-items: center;
+}
+.hero .box .hero-content div {
+  width: 50%;
+}
+.hero .box .hero-content img {
+  width: 50%;
 }
 
 .m-1 {

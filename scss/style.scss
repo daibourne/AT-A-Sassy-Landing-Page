@@ -1,3 +1,5 @@
+@import 'config';
+
 
 * {
   box-sizing: border-box;
@@ -9,6 +11,7 @@ body {
   background-color: $light-color;
   font-family: $font-stack;
   line-height: 1;
+  color: white;
 }
 
 img {
@@ -28,6 +31,41 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
+  .box {
+    background-color: black;
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      h1 {
+        color: white;
+        ul {
+          display: flex;
+          color: white;
+          list-style-type: none;
+          justify-content: space-between;
+          li {
+            a {
+              color: white;
+
+            }
+          }
+        }
+      }
+    }
+    .hero-content {
+      display: flex;
+      align-items: center;
+      div {
+        width: 50%;
+        
+      }
+      img {
+        width: 50%;
+
+      }
+    }
+  }
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
